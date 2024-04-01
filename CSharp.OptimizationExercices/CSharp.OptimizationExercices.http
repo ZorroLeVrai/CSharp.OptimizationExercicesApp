@@ -1,0 +1,6 @@
+@CSharp.OptimizationExercices_HostAddress = http://localhost:5252
+
+GET {{CSharp.OptimizationExercices_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
