@@ -12,7 +12,7 @@ public static class PrimeNumbersService
                 result += ",";
             result += primeNumber.ToString();
 
-            if (nbPrimes >= nb)
+            if (++nbPrimes >= nb)
                 break;
         }
 
