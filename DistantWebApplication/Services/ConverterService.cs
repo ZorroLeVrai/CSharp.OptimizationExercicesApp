@@ -2,9 +2,9 @@
 
 public static class ConverterService
 {
-    public static string IntToBinary(int value)
+    public async static Task<string> IntToBinary(int value)
     {
-        Thread.Sleep(100);
+        await Task.Delay(500);
         return Convert.ToString(value, 2);
     }
 }

@@ -7,8 +7,8 @@ public static class GenerateBinaryNumbers
     public static async IAsyncEnumerable<string> GenerateBinaries(int nbNumbers)
     {
         for (int i = 0; i < nbNumbers; ++i) {
-            int randonNumber = random.Next(256);
-            yield return await GetBinary(randonNumber);
+            int randomNumber = random.Next(256);
+            yield return await GetBinary(randomNumber);
         }
 
         async Task<string> GetBinary(int number)

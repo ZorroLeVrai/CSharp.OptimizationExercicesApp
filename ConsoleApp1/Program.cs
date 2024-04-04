@@ -2,10 +2,10 @@
 
 using ConsoleApp1;
 
-await DisplayBinaries(5);
+await DisplayBinaries(10);
 
 async Task DisplayBinaries(int nb)
 {
-    await foreach (var binaryItem in GenerateBinaryNumbers.GenerateBinaries(5))
+    await foreach (var binaryItem in GenerateBinaryNumbers.GenerateBinaries(nb))
         Console.WriteLine(binaryItem);
 }

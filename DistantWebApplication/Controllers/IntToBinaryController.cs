@@ -13,7 +13,7 @@ public class IntToBinaryController : ControllerBase
     [HttpGet("{value}")]
     public string Get(int value)
     {
-        return ConverterService.IntToBinary(value);
+        return ConverterService.IntToBinary(value).Result;
     }
 
     // POST api/<IntToBinaryController>
@@ -25,7 +25,7 @@ public class IntToBinaryController : ControllerBase
         var result = new BinaryNumbers();
         result.Values = new string[value.Values.Length];
         for (int i = 0; i<value.Values.Length; ++i)
-            result.Values[i] = ConverterService.IntToBinary(value.Values[i]);
+            result.Values[i] = ConverterService.IntToBinary(value.Values[i]).Result;
 
         return result;
     }
