@@ -13,20 +13,20 @@ public class IntToBinaryController : ControllerBase
     [HttpGet("{value}")]
     public string Get(int value)
     {
-        return ConverterService.IntToBinary(value).Result;
+        return ConverterService.IntToBinary(value);
     }
 
     // POST api/<IntToBinaryController>
-    [HttpPost]
-    public BinaryNumbers Post([FromBody] Numbers value)
-    {
-        if (value == null) throw new ArgumentNullException("value");
+    //[HttpPost]
+    //public BinaryNumbers Post([FromBody] Numbers value)
+    //{
+    //    if (value == null) throw new ArgumentNullException("value");
 
-        var result = new BinaryNumbers();
-        result.Values = new string[value.Values.Length];
-        for (int i = 0; i<value.Values.Length; ++i)
-            result.Values[i] = ConverterService.IntToBinary(value.Values[i]).Result;
+    //    var result = new BinaryNumbers();
+    //    result.Values = new string[value.Values.Length];
+    //    for (int i = 0; i<value.Values.Length; ++i)
+    //        result.Values[i] = ConverterService.IntToBinary(value.Values[i]);
 
-        return result;
-    }
+    //    return result;
+    //}
 }

@@ -17,7 +17,6 @@ public static class GenerateBinaryNumbers
             
             client.BaseAddress = new Uri("https://localhost:7109/");
             var url = string.Concat("api/IntToBinary/", number);
-
             return await client.GetStringAsync(url);
         }
     }
