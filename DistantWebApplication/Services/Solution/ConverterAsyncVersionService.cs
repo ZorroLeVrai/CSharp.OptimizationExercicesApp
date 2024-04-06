@@ -1,4 +1,4 @@
-﻿namespace DistantWebApplication.Services;
+﻿namespace DistantWebApplication.Services.Solution;
 
 public class ConverterAsyncVersionService
 {

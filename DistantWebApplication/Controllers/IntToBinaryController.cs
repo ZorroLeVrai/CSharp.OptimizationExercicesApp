@@ -15,18 +15,4 @@ public class IntToBinaryController : ControllerBase
     {
         return ConverterService.IntToBinary(value);
     }
-
-    // POST api/<IntToBinaryController>
-    //[HttpPost]
-    //public BinaryNumbers Post([FromBody] Numbers value)
-    //{
-    //    if (value == null) throw new ArgumentNullException("value");
-
-    //    var result = new BinaryNumbers();
-    //    result.Values = new string[value.Values.Length];
-    //    for (int i = 0; i<value.Values.Length; ++i)
-    //        result.Values[i] = ConverterService.IntToBinary(value.Values[i]);
-
-    //    return result;
-    //}
 }
